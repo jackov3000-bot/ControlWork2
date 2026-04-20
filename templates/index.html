@@ -1,0 +1,11 @@
+
+Название сайта: {{ company.name}}
+<br>
+Описание: {{ company.description }}  
+<br>
+Список услуг:  {% for service in services %}
+{{ service.service_name }}
+{% endfor %}
+
+<a href="{% url 'contact-page' %}">Контакты</a>
+<a href="{% url 'trtr-page' %}">услуги</a>
