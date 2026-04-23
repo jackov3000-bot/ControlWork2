@@ -11,5 +11,8 @@ def contact(request):
 def trtr(request):
     info = Info.objects.first()
     return render(request, "trtr.html", locals())
+def geeks(request):
+    info = Info.objects.first()
+    return render(request, "geeks.html", locals())
 
 # Create your views here.
